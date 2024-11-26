@@ -1,0 +1,247 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+  font-size: 1.8rem;
+  line-height: 1.6;
+}
+
+ul {
+  list-style: none;
+}
+
+.head-section {
+  background-image: linear-gradient(180deg, #c4b6fd, #93acfc);
+}
+
+.navbar-brand,
+.text-primary {
+  color: #0a58ca !important;
+}
+
+.btn-primary {
+  background-color: #0a58ca !important;
+  border: none;
+}
+
+.nav-link:hover {
+  color: #0a58ca;
+}
+
+
+.hero-section {
+  padding: 3.2rem 0;
+}
+
+// .bg-header {
+//   background-color: var(--background-color);
+// }
+.hero-section p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+p {
+  font-size: 18px;
+}
+
+.btn-primary:hover {
+  background-color: #257dfd !important;
+}
+
+.blue-bg {
+  background-color: #0a58ca;
+  color: #fff;
+}
+
+.ionicons {
+  color: #0a58ca;
+  background-color: #f2f2f2;
+  padding: 10px;
+  height: 30px;
+  width: 30px;
+  margin-bottom: 12px;
+}
+
+.nav-tabs {
+  border: none;
+}
+
+.nav-tabs .active {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+.footer-section {
+  background-color: #0a58ca !important;
+  border: none;
+  color: #fff !important;
+}
+
+a {
+  text-decoration: none;
+}
+
+// .bg-header {
+//   background-color: var(--background-color);
+// }
+
+h1 {
+  font-size: 5.2rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.3;
+}
+
+.hero-section {
+  padding: 3.2rem 0;
+}
+
+.hero-section p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+}
+
+
+.btn {
+  background-color: var(--color-clr);
+  color: #fff;
+  padding: 8px 24px;
+  font-size: 1.8rem;
+  border-radius: 4px;
+}
+
+.hero-img {
+  width: 80%;
+  height: 470px;
+}
+
+.card-title {
+  font-size: 1.8rem;
+  font-weight: bold;
+}
+
+.card-text {
+  font-size: 1.6rem;
+  color: #777;
+}
+
+.how-it-works-title {
+  font-size: 2.4rem;
+  margin-bottom: 1.2rem;
+}
+
+.how-it-works-text {
+  font-size: 1.8rem;
+  color: #333;
+  line-height: 1.7;
+}
+
+.icon {
+  width: 1.8rem;
+  height: 1.8rem;
+  padding: 1.2rem;
+  background-color: var(--primary-color);
+  border-radius: 50%;
+  color: #fff;
+  margin-bottom: 1.6rem;
+}
+
+.how-it-works {
+  padding: 2.4rem 0;
+}
+
+.testimonials {
+  padding: 5rem 0;
+  background-color: var(--background-color);
+}
+
+.testimonial-text {
+  color: #048E7B;
+}
+
+.testimonials-name {
+  color: #048E7B;
+}
+
+.testimonial-card {
+  width: 50%;
+}
+
+h3 {
+  font-size: 2.4rem;
+}
+
+
+
+span.navbar-toggler-icon {
+  background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='yellow' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+  color: white;
+}
+
+/* change hamburger button border color */
+button.navbar-toggler {
+  border-color: #fff;
+}
+
+/* change navbar background on collapse */
+@media (max-width: 982px) {
+  nav .navbar-nav {
+    background-color: #048e7c74;
+    padding: 2rem;
+    backdrop-filter: blur(5px);
+  }
+
+  .hero-section {
+    text-align: center;
+  }
+
+  h1 {
+    font-size: 4rem;
+    margin-bottom: 1rem;
+  }
+}
+
+.navbar-brand:hover {
+  color: #048E7B;
+}
+
+
+.copyright {
+  font-size: 1.4rem;
+  color: #777;
+}
+
+
+.bord {
+  width: 446.18px;
+  height: 469.77px;
+  padding: 64px;
+  border-radius: 28px;
+  border: 1px solid black;
+  position: absolute;
+  right: 240px ;
+  animation: anm 6s linear infinite;
+  z-index: -1;
+  /* 2s لتحديد سرعة الدوران */
+}
+
+ @keyframes anm {
+   from {
+     transform: rotate(0deg);
+     /* البداية عند 0 درجة */
+   }
+
+   to {
+     transform: rotate(360deg);
+     /* النهاية عند 360 درجة */
+   }
+ }
+
+

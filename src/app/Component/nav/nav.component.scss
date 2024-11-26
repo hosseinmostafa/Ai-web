@@ -1,0 +1,100 @@
+body {
+  font-family: 'Lato', sans-serif;
+  color: #333;
+
+  line-height: 1.6;
+}
+
+// ul {
+//   list-style: none;
+// }
+
+a {
+  text-decoration: none;
+}
+
+.bg-header {
+  background-color: var(--background-color);
+}
+
+.clr{
+  color: var(--color-clr);
+}
+//  !important
+
+nav {
+  height: 5rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+}
+
+
+
+.nav-link:link,
+.nav-link:visited {
+  color: black;
+  font-size: 1.1rem;
+  font-weight: 500;
+  display: inline-block;
+}
+
+.nav-link:hover,
+.nav-link:active {
+  color: var(--color-clr);
+}
+
+
+.nav-link.cta {
+  background-color: #048E7B;
+  display: inline-block;
+  padding: 0.5rem 2rem !important;
+  border-radius: 4px;
+}
+
+.nav-link.cta:hover {
+  background-color: #0e2420;
+  color: #fff;
+}
+
+
+h1 {
+  font-size: 5.2rem;
+  letter-spacing: -0.4px;
+  line-height: 1.2;
+}
+
+h2 {
+  font-size: 4.4rem;
+  line-height: 1.3;
+}
+
+.hero-section {
+  padding: 3.2rem 0;
+}
+
+.hero-section p {
+  font-size: 1.8rem;
+  line-height: 1.7;
+  letter-spacing: 0.3px;
+
+}
+
+
+.btn {
+  background-color: black;
+  color: #fff;
+  padding: 8px 24px;
+  font-size: 1rem;
+  border-radius: 10px;
+  transition: .3s ease;
+}
+.btn:hover{
+  background-color: rgba(0, 0, 0, 0.527);
+
+}
+
+.hero-img {
+  width: 90%;
+}
