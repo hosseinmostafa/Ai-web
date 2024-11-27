@@ -113,13 +113,24 @@ h2 {
   background-color: var(--color-clr);
   color: #fff;
   padding: 8px 24px;
-  font-size: 1.8rem;
-  border-radius: 4px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+}
+
+.btn_start:hover{
+  background-color: rgba(120, 57, 255, 0.658) ;
+}
+.btn_all:hover{
+  background-color: #000000a2 !important;
 }
 
 .hero-img {
-  width: 80%;
+  max-width: 422px;
   height: 470px;
+  object-fit: cover;
+  object-position: center;
+
+
 }
 
 .card-title {
@@ -220,28 +231,105 @@ button.navbar-toggler {
 
 
 .bord {
-  width: 446.18px;
+  width: 421.18px;
   height: 469.77px;
-  padding: 64px;
   border-radius: 28px;
   border: 1px solid black;
   position: absolute;
-  right: 240px ;
+  // right: 240px ;
   animation: anm 6s linear infinite;
   z-index: -1;
-  /* 2s لتحديد سرعة الدوران */
 }
 
  @keyframes anm {
    from {
      transform: rotate(0deg);
-     /* البداية عند 0 درجة */
    }
 
    to {
-     transform: rotate(360deg);
-     /* النهاية عند 360 درجة */
+     transform: rotate(-360deg);
+
    }
  }
 
+ .row {
+   --bs-gutter-x: 1.5rem;
+   --bs-gutter-y: 0;
+   display: flex;
+   flex-wrap: wrap;
+   margin-top: 0 !important;
+   /* margin-right: calc(-.5* var(--bs-gutter-x)); */
+   margin-left: calc(-.5* var(--bs-gutter-x));
+ }
 
+/* إخفاء الصورة والخلفية المتحركة على الشاشات الصغيرة */
+@media (max-width: 767px) {
+  .bord {
+    display: none;
+    overflow: hidden;
+    /* إخفاء العنصر المتحرك */
+  }
+
+  .hero-img {
+    display: none;
+    overflow: hidden;
+    /* إخفاء الصورة */
+  }
+
+  /* تعديل التنسيق للنصوص */
+  .hero-section {
+    text-align: center;
+    /* توسيط النصوص */
+  }
+
+  h1 {
+    font-size: 3rem;
+    /* تقليل حجم الخط */
+  }
+
+  p {
+    font-size: 1.4rem;
+    /* تقليل حجم الخط */
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    /* تقليل حجم الأزرار */
+    padding: 6px 18px;
+  }
+}
+@media (max-width: 992px) {
+  .bord {
+    display: none;
+    overflow: hidden;
+    /* إخفاء العنصر المتحرك */
+  }
+
+  .hero-img {
+    display: none;
+    overflow: hidden;
+    /* إخفاء الصورة */
+  }
+
+  /* تعديل التنسيق للنصوص */
+  .hero-section {
+    text-align: center;
+    /* توسيط النصوص */
+  }
+
+  h1 {
+    font-size: 3rem;
+    /* تقليل حجم الخط */
+  }
+
+  p {
+    font-size: 1.4rem;
+    /* تقليل حجم الخط */
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    /* تقليل حجم الأزرار */
+    padding: 6px 18px;
+  }
+}
