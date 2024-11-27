@@ -129,8 +129,23 @@ h2 {
   height: 470px;
   object-fit: cover;
   object-position: center;
+}
 
 
+.card-body {
+  text-align: right;
+  /* يجعل النص يظهر على اليمين */
+}
+
+.img-product {
+  width: 100%;
+  height: 100%;
+  border-radius: 10px;
+
+}
+
+.col-img{
+  width: 100%;
 }
 
 .card-title {
@@ -170,7 +185,7 @@ h2 {
 
 .testimonials {
   padding: 5rem 0;
-  background-color: var(--background-color);
+  background-color: rgb(0, 0, 0);
 }
 
 .testimonial-text {
@@ -178,7 +193,7 @@ h2 {
 }
 
 .testimonials-name {
-  color: #048E7B;
+  color: white;
 }
 
 .testimonial-card {
@@ -331,5 +346,245 @@ button.navbar-toggler {
     font-size: 1.4rem;
     /* تقليل حجم الأزرار */
     padding: 6px 18px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@import url(https://fonts.googleapis.com/css?family=Calibri:400,300,700);
+
+body {
+  vertical-align: middle;
+  display: flex;
+  font-family: 'Calibri', sans-serif !important;
+  background-color: #eee
+}
+
+.mt-100 {
+  margin-top: 100px
+}
+
+.product-wrapper,
+.product-img {
+  overflow: hidden;
+  position: relative
+}
+
+.mb-45 {
+  margin-bottom: 45px
+}
+
+.product-action {
+  bottom: 0px;
+  left: 0;
+  opacity: 0;
+  position: absolute;
+  right: 0;
+  text-align: center;
+  transition: all 0.6s ease 0s
+}
+
+.product-wrapper {
+  border-radius: 10px
+}
+
+.product-img>span {
+  background-color: #000000;
+  box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+  color: #ffffff;
+  display: inline-block;
+  font-size: 12px;
+  font-weight: 500;
+  left: 20px;
+  letter-spacing: 1px;
+  padding: 3px 12px;
+  position: absolute;
+  text-align: center;
+  text-transform: uppercase;
+  top: 20px
+}
+
+.product-action-style {
+  background-color: #00000094;
+  color: rgb(255, 255, 255);
+  box-shadow: 0 0 8px 1.7px rgba(0, 0, 0, 0.06);
+  display: inline-block;
+  padding: 16px 2px 12px
+}
+
+.product-action-style>a {
+  color: #fffcfc;
+  line-height: 1;
+  padding: 0 21px;
+  position: relative
+}
+
+.product-action-style>a.action-plus {
+  font-size: 18px
+}
+
+.product-wrapper:hover .product-action {
+  bottom: 20px;
+  opacity: 1
+}
+
+
+.text-wl{
+  color: #fdfdfd8e;
+}
+.text-rv{
+  color: #0000005b;
+}
+
+
+
+
+
+
+
+
+
+
+
+#contact {
+  position: relative;
+  z-index: 2;
+
+}
+
+#contact::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(rgba(var(--c-brand-rgb), 0.8), rgba(var(--c-brand-rgb), 0.8));
+  background-position: center;
+  background-size: cover;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
+}
+
+
+#contact .form-control:focus {
+  border: none;
+  border-color: var(--c-brand);
+}
+
+
+.img-dad {
+  width: 90px !important;
+}
+
+.img-dad2 {
+  width: 90px !important;
+  // height: 70px;
+}
+
+.star-rating {
+  display: inline-block;
+  direction: rtl;
+  font-size: 2rem;
+  position: relative;
+}
+
+.star-rating input {
+  display: none;
+}
+
+.star-rating label {
+  color: lightgray;
+  cursor: pointer;
+  padding: 0 5px;
+  transition: .4s;
+}
+
+.star-rating input:checked~label {
+  color: gold;
+  transition: .4s;
+}
+
+.star-rating label:hover,
+.star-rating label:hover~label {
+  color: gold;
+  transition: .4s;
+}
+.clr {
+  color: var(--color-clr);
+}
+
+
+
+/* تعيين الصور لتكون مرنة وتتكيف مع الحاوية */
+.product-img img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+
+/* تصميم النص ليكون متجاوبًا */
+.product-action h5 {
+  font-size: 1.2rem;
+  /* حجم خط نسبي */
+  text-align: center;
+}
+
+.product-action p {
+  font-size: 1rem;
+  margin: 0.5em 0;
+  text-align: center;
+}
+
+.product-action .btn {
+  font-size: 0.9rem;
+  padding: 0.5em 1em;
+}
+
+/* الحاوية الكاملة تصبح متجاوبة */
+
+/* تصميم مرن باستخدام الشبكة */
+@media (max-width: 768px) {
+  .product-action h5 {
+    font-size: 1rem;
+    /* تقليل حجم الخط للشاشات الصغيرة */
+  }
+
+  .product-action p {
+    font-size: 0.9rem;
+  }
+
+  .product-action .btn {
+    font-size: 0.8rem;
+  }
+}
+
+@media (max-width: 576px) {
+  .product-action h5 {
+    font-size: 0.9rem;
+    /* مزيد من التكييف للشاشات الصغيرة جدًا */
+  }
+
+  .product-action p {
+    font-size: 0.8rem;
+  }
+
+  .product-action .btn {
+    font-size: 0.7rem;
+    padding: 0.4em 0.8em;
   }
 }

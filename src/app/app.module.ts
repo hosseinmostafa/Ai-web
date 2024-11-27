@@ -9,6 +9,11 @@ import { NavComponent } from './Component/nav/nav.component';
 import { ProductsComponent } from './Component/products/products.component';
 import { CartComponent } from './Component/cart/cart.component';
 import { FooterComponent } from './Component/footer/footer.component';
+import { AngularFireModule } from '@angular/fire/compat';
+import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+
+
 
 @NgModule({
   declarations: [
@@ -18,11 +23,14 @@ import { FooterComponent } from './Component/footer/footer.component';
     NavComponent,
     ProductsComponent,
     CartComponent,
-    FooterComponent
+    FooterComponent,
+
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule,
+    ReactiveFormsModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
