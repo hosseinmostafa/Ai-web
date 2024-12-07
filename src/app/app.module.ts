@@ -12,6 +12,10 @@ import { FooterComponent } from './Component/footer/footer.component';
 import { AngularFireModule } from '@angular/fire/compat';
 import { AngularFireDatabaseModule } from '@angular/fire/compat/database';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { ResetPassowrdComponent } from './Component/reset-passowrd/reset-passowrd.component';
+import { NotFoundComponent } from './Component/not-found/not-found.component';
+import { CheckEmailComponent } from './Component/check-email/check-email.component';
+import { DashpordComponent } from './Component/dashpord/dashpord.component';
 
 
 
@@ -24,6 +28,10 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     ProductsComponent,
     CartComponent,
     FooterComponent,
+    ResetPassowrdComponent,
+    NotFoundComponent,
+    CheckEmailComponent,
+    DashpordComponent,
 
   ],
   imports: [

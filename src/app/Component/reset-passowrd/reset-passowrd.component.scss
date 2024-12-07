@@ -58,7 +58,7 @@
 
 }
 
-.form-label{
+.form-label {
   font-size: 17px;
   font-weight: 600;
 }
@@ -72,12 +72,17 @@
   text-decoration: none;
 }
 
-.btn-login{
+.btn-login {
   background-color: var(--color-clr);
   color: white;
 }
-.btn-login:hover{
-  background-color: rgba(120, 57, 255, 0.658) ;
+
+.btn-login:hover {
+  background-color: rgba(120, 57, 255, 0.658);
+}
+
+.pargraf-reset{
+  color: #000000a4 !important;
 }
 
 @media (max-width: 767px) {

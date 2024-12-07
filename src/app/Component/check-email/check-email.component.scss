@@ -1,0 +1,24 @@
+.btn
+{
+  background-color: var(--color-clr);
+  color: #fff;
+  padding: 8px 24px;
+  font-size: 1.1rem;
+  border-radius: 10px;
+  width: 50%;
+  margin-bottom: 20px;
+}
+
+.btn:hover{
+  background-color: rgba(120, 57, 255, 0.658) ;
+
+}
+
+
+.rest{
+  color: var(--color-clr);
+  text-decoration: none;
+}
+.rest:hover{
+  color: rgba(120, 57, 255, 0.658) ;
+}

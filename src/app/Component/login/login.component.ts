@@ -6,5 +6,11 @@ import { Component } from '@angular/core';
   styleUrl: './login.component.scss'
 })
 export class LoginComponent {
+  constructor() { }
+  login(){
+    console.log("Login");
+  }
+  
+
 
 }

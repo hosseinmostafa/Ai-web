@@ -1,0 +1,119 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9f9;
+}
+
+.dashboard-header {
+  padding: 15px 20px;
+  background-color: #000;
+  color: #fff;
+  border-radius: 10px;
+  width: fit-content;
+}
+
+.dashboard-header span {
+  font-weight: bold;
+}
+
+.chart {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  height: 300px;
+}
+
+.performance-box {
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.btn-statistics {
+  background-color: #6c63ff;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.btn-statistics:hover {
+  background-color: #5246cc;
+}
+
+
+.progress {
+  position: relative;
+  width: 20px;
+  /* عرض الشريط */
+  height: 200px;
+  /* طول الشريط */
+  background-color: #e9ecef;
+  /* لون الخلفية */
+  border-radius: 5px;
+  /* حواف دائرية */
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+
+  left: 0;
+  width: 100%;
+
+  height: 0;
+
+  background-color: #6c63ff;
+
+  transition: height 1s ease-in-out;
+
+}
+
+.progress-bar-animated {
+  animation: grow-up 2s ease-in-out forwards;
+
+}
+
+
+.progress-container {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  align-items: flex-end;
+  height: 250px;
+}
+
+.progress {
+  position: relative;
+  width: 20px;
+  height: 100%;
+  background-color: #e9ecef;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.progress-bar {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: #6c63ff;
+  transition: height 1s ease-in-out;
+}
+
+.progress-bar-animated {
+  animation: grow-up 2s ease-in-out forwards;
+}
+
+@keyframes grow-up {
+  from {
+    height: 0;
+  }
+}
