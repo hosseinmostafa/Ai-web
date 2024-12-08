@@ -16,6 +16,7 @@ import { ResetPassowrdComponent } from './Component/reset-passowrd/reset-passowr
 import { NotFoundComponent } from './Component/not-found/not-found.component';
 import { CheckEmailComponent } from './Component/check-email/check-email.component';
 import { DashpordComponent } from './Component/dashpord/dashpord.component';
+import { AboutUsComponent } from './Component/about-us/about-us.component';
 
 
 
@@ -32,6 +33,7 @@ import { DashpordComponent } from './Component/dashpord/dashpord.component';
     NotFoundComponent,
     CheckEmailComponent,
     DashpordComponent,
+    AboutUsComponent,
 
   ],
   imports: [
