@@ -10,15 +10,15 @@ import { CheckEmailComponent } from './Component/check-email/check-email.compone
 import { DashpordComponent } from './Component/dashpord/dashpord.component';
 
 const routes: Routes = [
-  {path: '', redirectTo: 'home', pathMatch: 'full'},
-  {path: 'home', component: HomeComponent},
-  {path: 'login', component: LoginComponent},
-  {path: 'products', component: ProductsComponent},
-  {path: 'cart', component: CartComponent},
+  { path: '', redirectTo: 'home', pathMatch: 'full' },
+  { path: 'home', component: HomeComponent },
+  { path: 'login', component: LoginComponent },
+  { path: 'products', component: ProductsComponent },
+  { path: 'cart', component: CartComponent },
   { path: 'reset-passowrd', component: ResetPassowrdComponent },
-  { path: 'check-email', component: CheckEmailComponent},
-  { path: 'dashpord', component: DashpordComponent},
-  {path: '**', component: NotFoundComponent}
+  { path: 'check-email', component: CheckEmailComponent },
+  { path: 'dashpord', component: DashpordComponent },
+  { path: '**', component: NotFoundComponent }
 
 
 ];
